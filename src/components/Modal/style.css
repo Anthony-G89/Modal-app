@@ -12,13 +12,20 @@ body {
     background-color: white;
      width: 80%;
      max-width: 800px;
-     margin: 4rem auto;
      transition:  .7s;
+}
+
+
+.something {
+    position: fixed;
+    bottom: 71%;
+    left: 12%;
 }
 
 
 .modal-header {
     background-color: #5a5a5a;
+    padding: 20px;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -29,6 +36,9 @@ body {
 
 
 .modal-header  span {
+    position: fixed;
+    top: 8%;
+    right: 4%;
     cursor: pointer;
     color: red;
 }
@@ -38,12 +48,11 @@ body {
     font-weight: bold;
 }
 
-.modal-content img {
-    position: relative;
-    margin: 1rem;
-    padding-left: 17%;
-    /* height: 111px; */
+.modal-content {
+    padding: 20px;
 }
+
+
 
 .modal-body p {
     background-color: lightgray;

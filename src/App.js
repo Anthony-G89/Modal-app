@@ -1,6 +1,5 @@
 import React from 'react';
 import SignUp from "./components/SignUp";
-// import Modal from './components/Modal';
 import './App.css';
 
 function App() {  
@@ -11,7 +10,7 @@ function App() {
     <div className="App" >
 
         <SignUp />
-        {/* <Modal  /> */}
+        
      
     </div>
   );

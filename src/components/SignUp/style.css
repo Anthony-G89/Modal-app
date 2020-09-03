@@ -13,6 +13,7 @@
 
 .header {
     font-size: large;
+    padding: 20px;
     color: blue; 
     border-bottom: 2px solid black;   
 }

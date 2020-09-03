@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Modal from "../Modal";
 import "./style.css";
 
 
@@ -9,16 +10,15 @@ function SignUp() {
     const [userName, setuserName] = useState();
     const [userPassword, setuserPassword] = useState();
 
-    const handleSubmit = e => {
-        e.preventDefault();
+    const handleClose = () => setShow(false);
 
-    }
-
+    
 
 
     return (
         
             <div className="card container">
+                < Modal  show={show} close={handleClose}/>
                 <div className="header">
                     <h1>Sign Up</h1>
                 </div>
