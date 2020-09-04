@@ -1,6 +1,5 @@
 * {
-    margin: 0;
-    padding: 0;
+    
     box-sizing: border-box;
 }
 
@@ -10,8 +9,9 @@ body {
 
 .modal-wrapper {
     background-color: white;
-     width: 80%;
-     max-width: 800px;
+     width: 90%;
+     
+     /* max-width: 800px; */
      transition:  .7s;
 }
 
@@ -19,18 +19,18 @@ body {
 .something {
     position: fixed;
     bottom: 71%;
-    left: 12%;
+    left: 5%;
 }
 
 
 .modal-header {
-    background-color: #5a5a5a;
-    padding: 20px;
+    background-color: #888896;
+    padding: 3px;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: large;
-    text-transform: uppercase;
+    
 }
 
 
@@ -50,29 +50,64 @@ body {
 
 .modal-content {
     padding: 20px;
+    background-color: white;
 }
 
 
 
 .modal-body p {
-    background-color: lightgray;
-    padding: 3px 0 2px 4px;
+    /* background-color: lightgray; */
+    padding: 20px;
+    font-size: large;
+    font-weight: bold;
 }
 
 
 .modal-footer {
+    position: relative;
     border: none;
+    padding: 30px 12px;
+    background-color: #888896;
     
   
 
 }
 .close-modal-btn {
-    background-color: orange;
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+    background-color: red;
     color: white;
+    font-size: large;
+    cursor: pointer;
+    margin: 8px 0 0 0;
     padding: 5px 26px;
     border: none;
     outline: none;
 }
+
+.cancel-modal-btn {
+    position: absolute;
+    bottom: 2px;
+    right: 129px;
+    background-color: blue;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    margin: 8px 0 0 0;
+    padding: 5px 26px;
+    border: none;
+    outline: none;
+}
+
+.back-drop {
+    background-color: rgb(219 221 223 / 56%);
+    height: 100%;
+    position: fixed;
+    transition: 1.3s;
+    width: 100%;
+}
+
 
 .btnToOpen {
     background-color: gray;

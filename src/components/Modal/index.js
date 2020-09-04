@@ -3,9 +3,12 @@ import "./style.css";
 
 
 
-const Modal = ({show, close}) => {
+const Modal = ({ show, close }) => {
 
     return (
+
+        <>
+            {show ? <div onClick={close} className="back-drop"></div> : null}
         <div className="modal-wrapper something"
             style={{
                 transform: show ? "translateY(0vh)" : "translateY(-100vh)",
@@ -20,17 +23,22 @@ const Modal = ({show, close}) => {
             <div className="modal-content">
                 <div className="modal-body">
                     <p>
-                        Are you sure you want to delete User. 
+                        Are you sure you want to delete User.
                     </p>
                 </div>
-                <div className="modal-footer">
-                    <button onClick={close} className="close-modal-btn">Close</button>
-                </div>
+            </div>
 
+            <div className="modal-footer">
+                <button onClick={close} className="close-modal-btn">Delete</button>
+                <button onClick={close} className="cancel-modal-btn"> Cancel</button>
             </div>
 
 
+
+
         </div>
+
+      </>  
     )
 
 }
